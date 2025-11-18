@@ -44,7 +44,21 @@
     }
 
     img {
-      @apply mx-auto border border-border;
+      /* Center images and set default width to 75% of prose width */
+      @apply block mx-auto border border-border rounded;
+      width: 75%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* On small screens use full width for readability */
+    @media (max-width: 640px) {
+      .app-prose img {
+        width: 100%;
+      }
     }
 
     figcaption {

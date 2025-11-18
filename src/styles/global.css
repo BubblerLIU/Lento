@@ -39,6 +39,10 @@ html[data-theme="dark"] {
   }
   body {
     @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    font-family: 'LXGW WenKai', '霞鹜文楷', 'Inter', 'Noto Sans SC', '思源黑体', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', Arial, Helvetica, sans-serif;
+  }
+  code, pre, kbd, samp {
+    font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'Consolas', 'Liberation Mono', 'monospace';
   }
   a,
   button {
@@ -55,7 +59,7 @@ html[data-theme="dark"] {
 }
 
 @utility max-w-app {
-  @apply max-w-3xl;
+  @apply max-w-4xl xl:max-w-5xl;
 }
 
 .active-nav {
