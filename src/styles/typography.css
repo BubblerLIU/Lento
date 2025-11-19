@@ -44,9 +44,9 @@
     }
 
     img {
-      /* Center images and set default width to 75% of prose width */
+      /* Center images and set default width to 85% of prose width */
       @apply block mx-auto border border-border rounded;
-      width: 75%;
+      width: 90%;
       max-width: 100%;
       height: auto;
       display: block;

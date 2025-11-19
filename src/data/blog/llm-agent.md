@@ -1,5 +1,5 @@
 ---
-title: 用 API+CheeryStudio 打造专属 AI 助手
+title: 用 API + Cheery Studio 打造个性化 AI 助手
 description: 使用 CheeryStudio 接入 API ，创建个性化、可定制的 AI 助手
 pubDatetime: 2025-11-18T19:00:00+08:00
 featured: true
@@ -8,7 +8,7 @@ tags:
     - " LLM"
 ---
 
-这篇文章将介绍如何使用 CheeryStudio 软件通过 API 获取大模型服务，并搭建自己个性化的 AI 助手。
+这篇文章将介绍如何通过 API 获取大模型服务，并接入 Cherry Studio 软件来搭建自己个性化的 AI 助手。
 
 > API 是“应用程序编程接口”（Application Programming Interface）的简称。它是一组约定好的规则和接口，让不同的软件或服务之间可以相互通信、调用功能或交换数据。你可以把 API 想象成“服务员”：你（客户端）向服务员（API）点菜（发送请求），厨房（服务器）做菜（处理逻辑/数据），服务员把菜端给你（返回响应）。
 
@@ -31,11 +31,26 @@ tags:
 
 ### 操作方法
 
-这里只介绍云雾 API 中转站的注册和使用，其他平台类似，且通常都有较完整的说明文档。
+这里只介绍 [云雾 API 中转站](https://yunwu.ai) 的注册和使用，其他平台类似，且通常都有较完整的说明文档。你也可以通过我的 [邀请链接](https://yunwu.ai/register?aff=CxIu) 访问注册。
 
 首先，我们要注册一个账号，这一步是平凡的。注册完成并登录，可以看到以下界面。
 
-![云雾 API 控制台](https://gitee.com/lento_1_0/blog_pic_bed/raw/master/llm-1.png)
+![云雾 API 控制台界面](https://my-picbed-2025.oss-cn-beijing.aliyuncs.com/llm-1.png)
 
+点击左侧菜单中的“API 令牌”选项进入令牌管理界面，点击“添加令牌”，并做如下配置：
 
+- 名称：随意
+- 分组：default
+- 过期时间：永不过期
+- 额度设置：无限额度
+
+其他选项无需修改，然后点击“提交”，在令牌管理界面就可以看到刚刚创建的 API 令牌了。
+
+![云雾 API 令牌管理界面](https://my-picbed-2025.oss-cn-beijing.aliyuncs.com/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-11-19%20172758.png)
+
+至此，我们就完成了 API 的获取。接下来，我们把刚刚获取的 API 接入到 Cherry Studio 中来实现与模型对话的功能。
+
+## 配置 Cherry Studio
+
+访问 [Cheery Studio 官网](https://www.cherry-ai.com/)，下载并安装 Cheery Studio。
 
