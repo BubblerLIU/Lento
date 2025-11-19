@@ -9,8 +9,10 @@ title: "About"
 
 我对 Arch / System 很感兴趣，但我还没有确定我将来的研究方向。
 
-我喜欢听 G.E.M. 邓紫棋的歌。
+我喜欢听 G.E.M.邓紫棋的歌。
 
 这是我的博客，它尚在建设中。
+
+本站内容遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by/4.0/) 协议。
 
 ![示例图片](https://b0.bdstatic.com/1fed320daa12d20c584fdc57c5247c79.jpg)
